@@ -1,0 +1,132 @@
+body {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+    background-color: var(--Violet);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+}
+
+.logo {
+    margin-bottom: 50px;
+    width: 160px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+img {
+    width: auto;
+}
+
+.hud-flex {
+    display: flex;
+}
+
+.hud-flex div {
+    flex: 1;
+}
+
+.hud-text {
+    color: white;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.hud-text h1 {
+    color: white;
+    margin-left: 20px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hud-text p {
+    line-height: 25px;
+    font-size: 17px;
+    opacity: 0.7;
+    margin-left: 25px;
+    
+}
+
+button {
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: var(--Violet);
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social-links a {
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+@media (max-width:1230px) {
+    body {
+        width: 343px;
+        margin: 30px auto;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .hud-flex {
+        flex-direction: column;
+    }
+
+    .hud-text {
+        font-size: .2rem;
+        text-align: center;
+        margin: 0;
+        margin-top: 40px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 50%;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
